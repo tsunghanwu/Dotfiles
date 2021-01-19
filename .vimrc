@@ -28,17 +28,17 @@ Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdtree'
 call plug#end()
 
-"Setup the lightline plugin
+"Set up the lightline plugin
 set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 if !has('gui_running')
-	set t_Co=256
+    set t_Co=256
 endif
 
-"Setup the rainbow parenthesis
+"Set up the rainbow parenthesis
 let g:rainbow_active = 1
 
-"Setup the tender colorscheme to overwrite the original setup
+"Set up the tender colorscheme to overwrite the original setup
 colorscheme tender
