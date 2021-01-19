@@ -1,3 +1,4 @@
+"General setting
 set nu
 set ai
 set tabstop=4
@@ -6,6 +7,8 @@ set shiftwidth=4
 set bg=dark
 set ruler
 syntax on
+set clipboard^=unnamed
+set backspace=indent,eol,start
 
 "Set up search highlight
 set hlsearch
@@ -16,9 +19,6 @@ hi Comment ctermfg=DarkRed
 "Set up cursorline
 set cursorline
 hi CursorLine cterm=bold ctermbg=none ctermfg=none gui=bold
-
-set clipboard^=unnamed
-set backspace=indent,eol,start
 
 "Vim Plug
 call plug#begin('~/.vim/plugged')
