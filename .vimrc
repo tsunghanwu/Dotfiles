@@ -42,3 +42,6 @@ let g:rainbow_active = 1
 
 "Set up the tender colorscheme to overwrite the original setup
 colorscheme tender
+
+"Uncomment the following line when using tmux
+"highlight Normal ctermbg=None
