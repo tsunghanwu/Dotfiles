@@ -10,6 +10,7 @@ set ruler
 syntax on
 set clipboard^=unnamed
 set backspace=indent,eol,start
+set visualbell
 
 "Set up search highlight
 set hlsearch
