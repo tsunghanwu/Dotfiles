@@ -28,6 +28,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 "Set up the lightline plugin
