@@ -25,7 +25,8 @@ hi CursorLine cterm=bold ctermbg=none ctermfg=none gui=bold
 "Vim Plug
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'jacoborus/tender.vim'
+"Plug 'jacoborus/tender.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
@@ -33,8 +34,9 @@ call plug#end()
 
 "Set up the lightline plugin
 set laststatus=2
+colorscheme onehalfdark 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'onehalfdark',
       \ }
 if !has('gui_running')
     set t_Co=256
@@ -42,9 +44,6 @@ endif
 
 "Set up the rainbow parenthesis
 let g:rainbow_active = 1
-
-"Set up the tender colorscheme to overwrite the original setup
-colorscheme tender
 
 "Uncomment the following line when using tmux
 "highlight Normal ctermbg=None
