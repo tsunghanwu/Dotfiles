@@ -1,2 +1,2 @@
-## **My General Vimrc Setup**
+## **My General Dotfiles Setup (Vim & Tmux)**
 #### ***Including vim-plug***
