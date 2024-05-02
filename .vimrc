@@ -25,18 +25,21 @@ hi CursorLine cterm=bold ctermbg=none ctermfg=none gui=bold
 "Vim Plug
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
-"Plug 'jacoborus/tender.vim'
+Plug 'jacoborus/tender.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'nordtheme/vim'
 Plug 'luochen1990/rainbow'
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "Set up the lightline plugin
 set laststatus=2
-colorscheme onehalfdark 
+colorscheme nord 
 let g:lightline = {
-      \ 'colorscheme': 'onehalfdark',
+      \ 'colorscheme': 'nord',
       \ }
 if !has('gui_running')
     set t_Co=256
