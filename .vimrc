@@ -33,13 +33,14 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
+Plug 'github/copilot.vim'
 call plug#end()
 
 "Set up the lightline plugin
 set laststatus=2
-colorscheme nord 
+colorscheme onehalfdark 
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'onehalfdark',
       \ }
 if !has('gui_running')
     set t_Co=256
