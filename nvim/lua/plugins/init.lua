@@ -16,6 +16,10 @@ return {
   {
     "github/copilot.vim",
     lazy = false,
+    init = function()
+      -- Avoid Copilot's inline suggestions competing with nvim-cmp.
+      vim.g.copilot_no_tab_map = true
+    end,
   },
 
   -- test new blink
